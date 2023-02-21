@@ -1,0 +1,60 @@
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kalkulator</title>
+        <meta name="description" content="Kalkulator">
+        
+    </head>
+    <body>
+        <h2>Dodaj liczby</h2>
+		
+        <p id="wynik">Tu będzie wynik</p>
+	
+         <label for="number1">Liczba 1:</label><br>
+         <input type="number" id="firstnumber" name="number1" value=1><br>
+			
+         <label for="number2">Liczba 2:</label><br>
+         <input type="number" id="secondnumber" name="number2" ><br><br>
+            
+         <button type="button" id="dodaj" onclick="dodajButton()">Dodaj!</button>
+        
+        
+        <script>
+			let a;
+			function dodajButton(){
+				a=document.getElementById("firstnumber").value;
+				return a;
+			}
+			//let a=document.getElementById("firstnumber").value;
+			console.log(a);
+			/*function myFunction(a, b) {
+				let a = document.getElementById("firstnumber");
+				let b = document.getElementById("secondnumber");
+				return a + b;
+			}*/
+			//document.getElementById("wynik").innerHTML = myFunction();
+		
+			/*var x = 	dodajButton(5, 6);
+			document.getElementById("wynik").innerHTML = x;
+			function dodajButton(a, b){
+				a=(document.getElementById("firstnumber").value);
+				b=(document.getElementById("secondnumber").value);
+				return a+b;
+			}
+			
+			//document.getElementById("wynik").innerHTML = dodajButton();
+			
+			function adding(a, b){
+				//console.log("abcd");
+				//console.log(a);
+				//return a+b;
+			}
+			document.getElementById("wynik").innerHTML = adding();
+				*/
+			
+        </script>
+		
+    </body>
+</html>
