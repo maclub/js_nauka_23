@@ -18,11 +18,10 @@
          <label for="number2">Liczba 2:</label><br>
          <input type="number" id="secondnumber" name="number2" ><br><br>
             
-         <button type="button" id="dodaj" <!--onclick="dodajButton()"-->Dodaj!</button>
+         <button type="button" id="dodaj" >Dodaj!</button>
 
-         <!--
-		 <button type="button" id="dodaj" onclick="dodajButton()">Odejmij!</button>
-        -->
+         <button type="button" id="odejmij" onclick="odejmijButton()">Odejmij!</button>
+        
         
         <script>
 			document.getElementById("dodaj").addEventListener("click", dodajButton);
@@ -38,6 +37,18 @@
 				return  suma;
 			}
 			
+			document.getElementById("odejmij").addEventListener("click", odejmijButton);
+			function odejmijButton(){
+				let n1=document.getElementById("firstnumber").value;
+				let n2=document.getElementById("secondnumber").value;
+				let sum=odejmowanie(n1, n2);
+				document.getElementById("wynik").innerHTML = sum;
+				//console.log(Number(n1)+Number(n2));
+			}
+			function odejmowanie(p1, p2){
+				let suma=Number(p1)-Number(p2);
+				return  suma;
+			}
         </script>
 		
     </body>
